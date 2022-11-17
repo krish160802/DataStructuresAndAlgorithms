@@ -1,0 +1,20 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+void duplicate(int arr[],int n){
+	int count = 0;
+	for(int i=0; i<n; i++){
+		if(arr[i] = arr[i+1]){
+			count++;
+		}
+		if(count == 2){
+			cout<<arr[i]<<" ";
+		}
+	}
+}
+int main(){
+	int arr[] = {1,4,2,4,5};
+	int n = sizeof(arr)/sizeof(arr[0]);
+	sort(arr,arr+n);
+	duplicate(arr,n);
+}
